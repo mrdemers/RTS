@@ -1,0 +1,1 @@
+This is an implementation of the A* pathfinding algorithm in an RTS game

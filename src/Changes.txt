@@ -1,0 +1,55 @@
+**************************************
+**************Change Log**************
+**************************************
+
+When you're done doing something, 
+log the change in here. Hopefully it
+will help keep us organized
+
+3/2/13: Unfortunitly, while putting in diagnostic System.out.println statements
+to determine where player movement is processed, I somehow caused a bug that makes
+movement spastic. I will now attempt to find what I changed and undo my damage.
+
+3/2/13: changed the images variable of the tile class to an ArrayList, and added 
+the "tree" tile. Most tile data is now stored in a different class, so that each
+tile doesn't need to know any more variables than it needs to. 
+
+3/2/13: Added the "resouces" package. Growing feeling I misspelled that...
+
+3/2/13: Started unit facing the direction they are walking - Matt
+
+3/3/13: Clicking on trees now cuts them down, and the harvester picks up wood
+They can return it to a stockpile, but I have yet to implement the stockpile
+getting the wood
+
+3/3/13: Fixed the different walking directions. Added ability to scroll in and out of map,
+but need to make it better - Matt
+
+3/3/13: Changed stockpile to a building, need to change it so it doesn't involve tiles so much
+Added rudimentary combat - Matt
+
+3/4/13: Made buildings visable.
+
+3/5/13: Changed the animation for units - Matt
+
+3/6/13 Got combat slightly working - Matt
+
+3/7/13: Worked on basic addingto/taking from stockpiles
+
+3/7/13: Started the gui bar at the bottom and minimap, changed tile types so they need a color, 
+		which is used in the minimap - Matt
+		
+3/9/13: Added a path class, which is what the unit class now uses instead of a list for the path.
+		The path class has the getDistance method which you can use to see how many tiles the path
+		takes from the start to end. Also changed the camera movement so you drag it with the right 
+		mouse button. Need to fix it for when you have units selected. - Matt
+		
+3/10/13: Camera follows units you make move. - Matt
+		 -Took that out now
+		 
+3/22/13: Started work on the FOW. Will make it look better - Matt
+
+4/2/13: Got FOW to work, look better, minimap reflects it - Matt
+
+4/6/13: wrote algorithim to check for nearest stockpile, but can't test it 
+	due to program running at 1 fps on my computer
